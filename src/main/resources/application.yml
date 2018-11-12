@@ -1,0 +1,21 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: camunda-app
+  datasource:
+    url: jdbc:mariadb://localhost:3306/configs
+    username: root
+    password: example
+    driver-class-name: org.mariadb.jdbc.Driver
+
+
+camunda:
+  bpm:
+    job-execution:
+      enabled: true
+
+logging:
+  level:
+    org.camunda: INFO

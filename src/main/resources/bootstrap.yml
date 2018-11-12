@@ -1,0 +1,13 @@
+spring.cloud.config.discovery.service-id: config-server
+spring.cloud.config.discovery.enabled: true
+spring.cloud.config.failFast: true
+spring:
+  cloud:
+    config:
+      label: 1.0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
